@@ -2,10 +2,29 @@
 //
 
 #include <iostream>
+#include <cmath>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    float a, min = 0;
+    int i, n;
+    bool fst;
+    fst = true;
+    cout << "n="; cin >> n;
+    for (i = 1; i <= n; i++) {
+        cout << "\ni=" << i << "\n";
+        a = (i - 1) / (i + 1) + sin(pow(i - 1, 3) / (i + 1));
+        if (fst) {
+            min = a; fst = false;
+        }
+        if (a > 0) {
+            if (min > a) { min = a; }
+        }
+    }
+    cout << "minimal a=" << min;
+    system("pause");
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

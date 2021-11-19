@@ -14,13 +14,12 @@ int main()
     fst = true;
     cout << "n="; cin >> n;
     for (i = 1; i <= n; i++) {
-        cout << "\ni=" << i << "\n";
         a = (i - 1) / (i + 1) + sin(pow(i - 1, 3) / (i + 1));
-        if (fst) {
-            min = a; fst = false;
-        }
         if (a > 0) {
-            if (min > a) { min = a; }
+            if (fst) {
+                min = a; fst = false;
+            }
+            if (a < min) min = a;
         }
     }
     cout << "minimal a=" << min;

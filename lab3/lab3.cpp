@@ -1,29 +1,11 @@
-﻿// lab2p2.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// lab3.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
-#include <cmath>
-
-using namespace std;
 
 int main()
 {
-    float a, min = 0;
-    int i, n;
-    bool fst;
-    fst = true;
-    cout << "n="; cin >> n;
-    for (i = 1; i <= n; i++) {
-        a = (i - 1) / (i + 1) + sin(pow(i - 1, 3) / (i + 1));
-        if (a > 0) {
-            if (fst) {
-                min = a; fst = false;
-            }
-            if (a < min) min = a;
-        }
-    }
-    cout << "minimal a=" << min << endl;
-    system("pause");
+    std::cout << "Hello World!\n";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

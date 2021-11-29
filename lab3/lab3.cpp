@@ -2,10 +2,31 @@
 //
 
 #include <iostream>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    float x, y;
+    cin >> x;
+    if (abs(x) >= 3) {
+        y = 4;
+    }
+    else if (abs(x) >= 2) {
+        if (x > 0) {
+            y = 4 * x - 8;
+        }
+        else {
+            y = -4 * x - 8;
+        }
+    }
+    else {
+        y = sqrt(4 - x * x);
+    }
+    cout  << "y=" << y << endl;
+    system("pause");
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

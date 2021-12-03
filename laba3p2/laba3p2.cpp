@@ -20,7 +20,7 @@ int main()
             res = false;
         }
         
-        cout << res << endl;
+        cout << res << endl; 
     }
     cout << res;
 }

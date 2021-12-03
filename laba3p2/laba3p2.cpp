@@ -13,7 +13,8 @@ int main()
  //   while (true) {
         res = true;
         cin >> x >> y;
-        if (((pow((x + 1), 2) + pow((y + 1), 2)) <= 1) or ((pow((x - 1), 2) + pow((y - 1), 2)) <= 1)) {
+        if (((pow((x + 1), 2) + pow((y + 1), 2)) <= 1) or 
+            ((pow((x - 1), 2) + pow((y - 1), 2)) <= 1)) {
             res = false;
         }       
         if ((abs(x) > 2) or (abs(y) > 1)) {

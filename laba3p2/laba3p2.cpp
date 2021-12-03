@@ -10,7 +10,7 @@ int main()
 {
     double x, y;
     bool res;
-    while (true) {
+ //   while (true) {
         res = true;
         cin >> x >> y;
         if (((pow((x + 1), 2) + pow((y + 1), 2)) <= 1) or ((pow((x - 1), 2) + pow((y - 1), 2)) <= 1)) {
@@ -21,7 +21,7 @@ int main()
         }
         
         cout << res << endl; 
-    }
+ //   }
     cout << res;
 }
 

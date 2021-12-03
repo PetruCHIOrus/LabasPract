@@ -1,3 +1,3 @@
 # LabasPract
-just labas in mrsu (cpp)<br/>
-check out graphics for labas - https://www.geogebra.org/m/jgwdbdnv
+Просто лабы (cpp)<br/>
+Графики для лабораторных - https://www.geogebra.org/m/jgwdbdnv

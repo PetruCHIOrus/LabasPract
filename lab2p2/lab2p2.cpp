@@ -14,7 +14,7 @@ int main()
     fst = true;
     cout << "n="; cin >> n;
     for (i = 1; i <= n; i++) {
-        a = (i - 1) / (i + 1) + sin(pow(i - 1, 3) / (i + 1));
+        a = (i - 1) / (i + 1.0) + sin(pow(i - 1, 3) / (i + 1));
         if (a > 0) {
             if (fst) {
                 min = a; fst = false;

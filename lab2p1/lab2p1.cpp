@@ -11,9 +11,7 @@ int main()
     float x, xold, xolder, q, r, b, c, d;
     int n, i;
     cout << "q r b c d=";
-    cin >> q >> r >> b >> c >> d;
-    cout << "n=";
-    cin >> n;
+    cin >> q >> r >> b >> c >> d >> n;
     xold = d;
     xolder = c;
 

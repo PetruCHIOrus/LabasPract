@@ -16,12 +16,14 @@ int main()
         if (((pow((x + 1), 2) + pow((y + 1), 2)) <= 1) or 
             ((pow((x - 1), 2) + pow((y - 1), 2)) <= 1)) {
             res = false;
-        }       
-        if ((abs(x) > 2) or (abs(y) > 1)) {
-            res = false;
+        }
+        else {
+            if ((abs(x) > 2) or (abs(y) > 1)) {
+                res = false;
+            }
         }
         
-        cout << res << endl; 
+       // cout << res << endl; 
  //   }
     cout << res;
 }

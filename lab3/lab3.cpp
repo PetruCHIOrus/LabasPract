@@ -7,10 +7,9 @@
 
 using namespace std;
 
-int main()
+float func(float x)
 {
-    float x, y;
-    cin >> x;
+    float y;
     if (abs(x) >= 3) {
         y = 4;
     }
@@ -25,9 +24,17 @@ int main()
     else {
         y = sqrt(4 - x * x);
     }
-    cout  << "y=" << y << endl;
-    system("pause");
+    return y;
 }
+
+int main() {
+    float ask;
+    while(1){
+        cin >> ask;
+        cout <<"x=" << ask << "\ty=" << func(ask) << endl;
+    }
+}
+
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
